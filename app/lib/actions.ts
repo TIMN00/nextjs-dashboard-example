@@ -110,7 +110,7 @@ export async function authenticate(
     prevState: string | undefined,
     formData: FormData,
 ) {
-    formData.set('redirectTo', '/dashboard');
+    //formData.set('redirectTo', '/dashboard');
     try {
         await signIn('credentials', formData);
     } catch (error) {
